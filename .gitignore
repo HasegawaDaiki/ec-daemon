@@ -1,0 +1,4 @@
+*.log
+venv/
+hoge.txt
+logs/

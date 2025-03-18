@@ -1,0 +1,25 @@
+services:
+  db:
+    image: mysql
+    volumes:
+      - volume:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+
+  web:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "5001:5001"
+    depends_on:
+      - db
+    restart: always
+    stdin_open: true
+    tty: true
+
+volumes:
+  volume:
