@@ -12,7 +12,7 @@ RUN apt-get update
 
 RUN apt-get install -y git
 
-RUN git config --global user.name "kiri"
+RUN git config --global user.name "HasegawaDaiki"
 RUN git config --global user.email "schroeder.118@gmail.com"
 
 RUN apt-get install -y python3
