@@ -1,4 +1,6 @@
+log/
 *.log
-venv/
-hoge.txt
-logs/
+flask/venv/
+flask/__pycache__/
+flask/gunicorn/__pycache__/
+mosquitto/data/
