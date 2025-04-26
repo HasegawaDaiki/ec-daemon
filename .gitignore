@@ -1,6 +1,6 @@
 log/
 *.log
 flask/venv/
-flask/__pycache__/
-flask/gunicorn/__pycache__/
+flask/__pycache__/*
+flask/gunicorn/__pycache__/*
 mosquitto/data/
